@@ -22,3 +22,10 @@ resource "aws_instance" "example2"{
         Name="worker"
         }
 }
+
+output "private_ips"{
+        value={
+        master=aws_instance.example1.private_ip
+        worker=aws_instance.example2.private_ip
+        }
+}
