@@ -21,7 +21,7 @@ resource "aws_instance" "example2"{
         provider=aws.insta2
         key_name= "aws-sign"
         tags={
-        Name="worker"
+        Name="worker1"
         }
 }
 
